@@ -33,7 +33,6 @@ typedef enum {
 	PTYPE_ACK = 2,
 	PTYPE_NACK = 3,
 } ptypes_t;
-pkt_t* pkt_new()
 
 
 /* Valeur de retours des fonctions */
