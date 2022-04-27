@@ -15,6 +15,12 @@ int print_usage(char *prog_name) {
 }
 
 
+
+void selective_repeat_sender(char* filename, bool fec, int sock){
+    
+}
+
+
 int main(int argc, char **argv) {
     int opt;
 

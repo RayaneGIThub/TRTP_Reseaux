@@ -17,6 +17,8 @@ int print_usage(char *prog_name) {
 }
 
 
+
+
 int main(int argc, char **argv) {
     int opt;
 
@@ -85,8 +87,8 @@ int main(int argc, char **argv) {
             }
 
             socklen_t peer_addr_len = sizeof(peer_addr);
-            char buffer[1024];
-            ssize_t n_received = recvfrom(sock, buffer, 1024, 0, (struct sockaddr *) &peer_addr, &peer_addr_len);
+            char buffer[528];
+            ssize_t n_received = recvfrom(sock, buffer, 528, 0, (struct sockaddr *) &peer_addr, &peer_addr_len);
             if (n_received == -1) {
                 return -1;
             }
